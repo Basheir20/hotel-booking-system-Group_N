@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Room - Luxury Hotel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <main class="max-w-3xl mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-2xl font-bold mb-6">Complete Your Booking</h1>
+            
+            <div id="roomDetails" class="mb-8">
+                <!-- Room details will be inserted here -->
+            </div>
+
+            <form id="bookingForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Check-in Date</label>
+                        <input type="date" name="checkInDate" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Check-out Date</label>
+                        <input type="date" name="checkOutDate" required
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                    </div>
+                </div>
+
+                <div id="paymentDetails" class="border-t pt-6 mt-6">
+                    <h2 class="text-lg font-semibold mb-4">Payment Details</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Card Number</label>
+                            <input type="text" placeholder="1234 5678 9012 3456" required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Expiry Date</label>
+                                <input type="text" placeholder="MM/YY" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">CVV</label>
+                                <input type="text" placeholder="123" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t pt-6">
+                    <div id="totalPrice" class="text-xl font-bold mb-4">
+                        <!-- Total price will be calculated and shown here -->
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-[#B68D40] text-white px-6 py-3 rounded-md hover:bg-[#A67C30]">
+                        Confirm Booking
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="/js/booking.js"></script>
+</body>
+</html> 
