@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gray-800">Luxury Hotel</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
+                    <a href="/rooms" class="text-gray-800 hover:text-gray-600">Rooms</a>
+                    <a href="/login" class="text-gray-800 hover:text-gray-600">Login</a>
+                    <a href="/signup" class="bg-[#B68D40] text-white px-4 py-2 rounded-md hover:bg-[#A67C30]">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen">
+            <img src="/images/banner/hero-banner.jpg" alt="Luxury Hotel" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative h-full flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h1 class="text-5xl font-bold mb-4">Welcome to Luxury Hotel</h1>
+                    <p class="text-xl mb-8">Experience comfort and elegance</p>
+                    <a href="/rooms" class="bg-[#B68D40] text-white px-8 py-3 rounded-full hover:bg-[#A67C30]">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Rooms Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-[#4A4238] mb-12">Featured Rooms</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#FAF6F1] rounded-lg overflow-hidden shadow-lg">
+                        <img src="/images/rooms/standard1.jpg" alt="Standard Room" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-[#4A4238] mb-2">Standard Room</h3>
+                            <p class="text-[#8B7355] mb-4">Starting from $100/night</p>
+                            <a href="/rooms.html" class="block text-center bg-[#B68D40] text-white px-4 py-2 rounded-md hover:bg-[#A67C30]">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Add similar cards for Deluxe and Suite rooms -->
+                </div>
+                <div class="text-center mt-8">
+                    <a href="/rooms.html" class="inline-block bg-[#B68D40] text-white px-8 py-3 rounded-full hover:bg-[#A67C30]">
+                        View All Rooms
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Amenities</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="/images/amenities/wifi.svg" alt="WiFi" class="mx-auto w-12 h-12 mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Free WiFi</h3>
+                        <p class="text-gray-600">High-speed internet throughout the hotel</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/images/amenities/pool.svg" alt="Pool" class="mx-auto w-12 h-12 mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Swimming Pool</h3>
+                        <p class="text-gray-600">Outdoor pool with stunning views</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="/images/amenities/restaurant.svg" alt="Restaurant" class="mx-auto w-12 h-12 mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Fine Dining</h3>
+                        <p class="text-gray-600">World-class restaurant and room service</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p>Email: Basheir@test.com</p>
+                    <p>Phone: 1234567890</p>
+                </div>
+                <!-- Additional footer content -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 

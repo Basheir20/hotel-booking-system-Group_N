@@ -1,0 +1,111 @@
+/* Base styles */
+:root {
+    --primary-color: #B68D40;
+    --secondary-color: #A67C30;
+    --accent-color: #F5E6D3;
+    --text-dark: #4A4238;
+    --text-light: #8B7355;
+    --background-light: #FAF6F1;
+    --white: #ffffff;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Common components */
+.hero-section {
+    position: relative;
+    height: 600px;
+    background-image: url('/images/banner/hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.room-card {
+    transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.amenity-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+}
+
+/* Form styles */
+.form-input {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm;
+    transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+    @apply border-[#9F7E4D] ring-[#9F7E4D];
+}
+
+.btn-primary {
+    @apply bg-[#B68D40] text-white px-6 py-2 rounded-md hover:bg-[#A67C30];
+    transition: all 0.2s ease;
+}
+
+.btn-secondary {
+    @apply bg-[#A67C30] text-white px-6 py-2 rounded-md hover:bg-[#B68D40];
+    transition: all 0.2s ease;
+}
+
+/* Add new button styles */
+.btn-outline {
+    @apply border-2 border-[#B68D40] text-[#B68D40] px-6 py-2 rounded-md hover:bg-[#B68D40] hover:text-white;
+    transition: all 0.2s ease;
+}
+
+/* Dashboard specific styles */
+.dashboard-card {
+    @apply bg-white rounded-lg shadow p-6;
+    animation: slideIn 0.5s ease-out;
+}
+
+.booking-item {
+    @apply border-b border-gray-200 py-4;
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive navigation */
+.mobile-menu {
+    @apply md:hidden fixed inset-0 bg-gray-800 bg-opacity-50;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.mobile-menu-content {
+    @apply bg-white w-64 h-full transform transition-transform;
+}
+
+/* Loading states */
+.loading-spinner {
+    @apply animate-spin h-5 w-5 text-[#B68D40];
+}
+
+.skeleton-loading {
+    @apply animate-pulse bg-gray-200 rounded;
+}
+
+/* Update background colors */
+body {
+    @apply bg-[#FAF6F1];
+}
+
+/* Update loading spinner color */
+.loading-spinner {
+    @apply animate-spin h-5 w-5 text-[#B68D40];
+} 
