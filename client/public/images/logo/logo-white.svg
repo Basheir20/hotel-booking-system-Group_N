@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50">
+  <text x="10" y="35" font-family="Arial" font-size="30" font-weight="bold" fill="#ffffff">
+    Luxury Hotel
+  </text>
+  <path d="M180 10 h-10 v30 h10 l5 -15 l-5 -15" fill="#ffffff"/>
+</svg> 
